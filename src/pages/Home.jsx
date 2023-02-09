@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 // Components
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard'
 
 // Image
@@ -19,7 +21,6 @@ import leaf2 from '../assets/img/leaf2.png'
 import truckIcon from '../assets/icon/ic_truck.svg'
 import headsetIcon from '../assets/icon/ic_headset.svg'
 import purseIcon from '../assets/icon/ic_purse.svg'
-
 
 function Home() {
     const productData = [
@@ -59,6 +60,7 @@ function Home() {
 
   return (
     <>
+        <Navbar />
         <header style={{backgroundImage: `url(${hero2})`}} className='bg-img-none'>
             <div className="container-fluid py-5 py-lg-0">
                 <div className="row justify-content-lg-end flex-column-reverse flex-lg-row py-5 py-lg-0 align-items-center">
@@ -151,6 +153,7 @@ function Home() {
                 </div>
             </section>
         </main>
+        <Footer />
     </>
   )
 }

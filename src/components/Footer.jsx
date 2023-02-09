@@ -2,6 +2,7 @@ import React from 'react'
 
 // image
 import logo from '../assets/img/Logo.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -19,16 +20,16 @@ function Footer() {
             <h4>Social Media</h4>
             <ul className="mt-3 list-unstyled">
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">Instagram</a>
+                <Link to="" className="text-white text-decoration-none">Instagram</Link>
               </li>
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">Facebook</a>
+                <Link to="" className="text-white text-decoration-none">Facebook</Link>
               </li>
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">Twitter</a>
+                <Link to="" className="text-white text-decoration-none">Twitter</Link>
               </li>
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">Tiktok</a>
+                <Link to="" className="text-white text-decoration-none">Tiktok</Link>
               </li>
             </ul>
           </div>
@@ -36,10 +37,10 @@ function Footer() {
             <h4>Helpful Links</h4>
             <ul className="mt-3 list-unstyled">
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">About</a>
+                <Link to="" className="text-white text-decoration-none">About</Link>
               </li>
               <li className="my-3">
-                <a href="#" className="text-white text-decoration-none">Blog</a>
+                <Link to="" className="text-white text-decoration-none">Blog</Link>
               </li>
             </ul>
           </div>

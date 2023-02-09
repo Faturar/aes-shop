@@ -11,11 +11,7 @@ import "aos/dist/aos.css";
 import './styles/index.css';
 
 // Pages
-import Home from './pages/Home';
-
-// Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Home from './pages/Home'
 
 function App() {
   useEffect(() => {
@@ -40,9 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
       <RouterProvider router={router} />
-      <Footer />
     </div>
   );
 }
