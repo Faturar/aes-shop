@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>Aes Plant</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="./assets/img/Logo.png" alt="logo" height="50px">
+        </a>
+        <div>
+          <a href="/#" class="me-5 d-lg-none">
+              <img src="./assets/icon/ic_cart.svg" alt="" height="35px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-lg-5 ms-2 mb-2 mb-lg-0">
+            <li class="nav-item me-xl-3 me-0">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item me-xl-3 me-0">
+              <a class="nav-link" href="/shop.html">Shop</a>
+            </li>
+            <li class="nav-item me-xl-3 me-0">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item me-xl-3 me-0">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="/#" class="me-5 d-lg-block d-none">
+            <img src="./assets/icon/ic_cart.svg" alt="" height="35px">
+          </a>
+          <button class="ms-lg-0 ms-2 btn btn-outline-success secondary-btn px-4">Login</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="cart">
+        <div class="container">
+            <h2>Cart</h2>
+            <div class="row mt-5 flex-column flex-lg-row">
+                <div class="col-12 col-xl-8">
+                    <div class="border px-4 py-3 rounded overflow-auto">
+                        <table class="align-middle table table-borderless rounded mb-0 cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col" class="text-center">Price</th>
+                                    <th scope="col" class="text-center">Quantity</th>
+                                    <th scope="col" class="text-center">Total</th>
+                                    <th scope="col" class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="d-flex align-items-center">
+                                        <img src="./assets/img/image1.jpg" alt="" class="img-fluid border rounded" width="120px">
+                                        <a href="#" class="fs-5 ms-3 text-decoration-none text-black">
+                                          Monstera
+                                        </a>
+                                    </td>
+                                    <td class="fs-5 text-center">$4</td>
+                                    <td class="fs-5 text-center">
+                                        <button class="btn secondary-btn border-secodary">-</button>
+                                        <span class="mx-3 quantity">3</span>
+                                        <button class="btn secondary-btn border-secodary">+</button>
+                                    </td>
+                                    <td class="fs-5 text-center">$12</td>
+                                    <td class="fs-5 text-center">
+                                        <button class="btn">
+                                            <img src="./assets/icon/ic_trash.svg" alt="" height="24">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td class="d-flex align-items-center">
+                                        <img src="./assets/img/image1.jpg" alt="" class="img-fluid border rounded" width="120px">
+                                        <a href="#" class="fs-5 ms-3 text-decoration-none text-black">
+                                          Monstera
+                                        </span>
+                                    </td>
+                                    <td class="fs-5 text-center">$4</td>
+                                    <td class="fs-5 text-center">
+                                        <button class="btn secondary-btn border-secodary">-</button>
+                                        <span class="mx-3 quantity">3</span>
+                                        <button class="btn secondary-btn border-secodary">+</button>
+                                    </td>
+                                    <td class="fs-5 text-center">$12</td>
+                                    <td class="fs-5 text-center">
+                                        <button class="btn">
+                                            <img src="./assets/icon/ic_trash.svg" alt="" height="24">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mt-5 mt-xl-0">
+                    <div class="border px-3 py-4 rounded">
+                        <span class="fs-4">Summary</span>
+                        <hr>
+                        <table class="table table-borderless">
+                          <tr>
+                            <th>Subtotal</th>
+                            <td class="text-end">$24</td>
+                          </tr>
+                          <tr>
+                            <th>Tax</th>
+                            <td class="text-end">$1</td>
+                          </tr>
+                          <tr>
+                            <th>Shipping</th>
+                            <td class="text-end">$0</td>
+                          </tr>
+                        </table>
+                        <hr>
+                        <table class="table table-borderless mb-0">
+                          <tr>
+                            <th>
+                              <span class="fs-4">Total</span>
+                            </th>
+                            <td class="text-end fs-4 text-danger">$24</td>
+                          </tr>
+                        </table>
+                    </div>
+                    <button class="btn primary-btn btn-lg  mt-3 w-100">Checkout</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row py-5 text-white">
+          <div class="col-lg-3 col-6">
+            <img src="./assets/img/Logo_text.png" alt="Aes plant logo" class="w-75">
+          </div>
+          <div class="col-lg-3 col-12 mt-lg-0 mt-4">
+            <h4>Social Media</h4>
+            <ul class="mt-3 list-unstyled">
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">Instagram</a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">Facebook</a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">Twitter</a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">Tiktok</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-12 mt-lg-0 mt-4">
+            <h4>Helpful Links</h4>
+            <ul class="mt-3 list-unstyled">
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-12 mt-lg-0 mt-4">
+            <h4>Contact Information</h4>
+            <ul class="mt-3 list-unstyled">
+              <li class="my-3">
+                <img src="./assets/icon/ic_telephone.svg" alt="" width="24">
+                <span class="ms-2">+62812345678</span>
+              </li>
+              <li class="my-3">
+                <img src="./assets/icon/ic_envelope.svg" alt="" width="24">
+                <span class="ms-2">support@aesplant.io</span>
+              </li>
+              <li class="my-3">
+                <img src="./assets/icon/ic_pinmap.svg" alt="" width="24">
+                <span class="ms-2">Jakarta, Indonesia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="m-0 bg-white">
+      <p class="text-center text-white mb-0 py-4">Copyright &copy; Aes Plant 2021</p>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

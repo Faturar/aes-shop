@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>Aes Plant</title>
+  </head>
+  <body>
+    <div class="container checkout">
+
+      <!-- Back button -->
+      <button class="btn secondary-btn mt-3">< Back</button>
+
+      <!-- Title -->
+      <h2 class="title">Checkout</h2>
+
+      <div class="row flex-column-reverse flex-md-row align-items-center align-items-xl-start">
+        <div class="col-12 col-xl-8 px-4">
+            <form action="">
+              <!-- Section customer information -->
+              <section class="customer-information row">
+                <div class="d-flex align-items-center">
+                  <div class="number-container d-flex justify-content-center align-items-center rounded-circle">
+                    <span class="fs-4 text-white text-center ">1.</span>
+                  </div>
+                  <span class="fs-3 ms-3">Customer information</span>
+                </div>
+                <div class="border rounded p-4 mt-5">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone-number" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="phone-number" id="phone-number" placeholder="Phone Number">
+                  </div>
+                  <a href="#shipping-information" class="btn primary-btn mt-4">Continue</a>
+                </div>
+              </section>
+
+              <!-- Section shipping information -->
+              <section id="shipping-information" class="shipping-information row">
+                <div class="d-flex align-items-center">
+                  <div class="number-container d-flex justify-content-center align-items-center rounded-circle">
+                    <span class="fs-4 text-white text-center ">2.</span>
+                  </div>
+                  <span class="fs-3 ms-3">Shipping information</span>
+                </div>
+                <div class="border rounded p-4 mt-5">
+                  <div class="mb-3">
+                    <label for="province" class="form-label">Province</label>
+                    <input type="text" class="form-control" name="province" id="province" placeholder="Province">
+                  </div>
+                  <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="City">
+                  </div>
+                  <div class="mb-3">
+                    <label for="districts" class="form-label">Districts</label>
+                    <input type="text" class="form-control" name="districts" id="districts" placeholder="Disctricts">
+                  </div>
+                  <div class="mb-3">
+                    <label for="post-code" class="form-label">Postal code</label>
+                    <input type="text" class="form-control" name="post-code" id="post-code" placeholder="Postal Code">
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" placeholder="Address" name="address" id="address"></textarea>
+                  </div>
+                  <a href="#payment" class="btn primary-btn mt-4">Continue</a>
+                </div>
+              </section>
+
+                <!-- Section Payment -->
+              <section id="payment" class="payment row">
+                  <div class="d-flex align-items-center">
+                    <div class="number-container d-flex justify-content-center align-items-center rounded-circle">
+                      <span class="fs-4 text-white text-center ">3.</span>
+                    </div>
+                    <span class="fs-3 ms-3">Payment</span>
+                  </div>
+                  <div class="border rounded p-4 mt-5">
+                    <label for="" class="fs-5">Payment Method</label>
+                    <div class="form-check mt-4">
+                      <input class="form-check-input" type="radio" value="credit-card" name="payment-method" id="payment-method1">
+                      <label class="form-check-label" for="payment-method1">
+                        Credit Card
+                      </label>
+                    </div>
+                    <div class="form-check mt-3">
+                      <input class="form-check-input" type="radio" value="cod" name="payment-method" id="payment-method2">
+                      <label class="form-check-label" for="payment-method2">
+                        COD
+                      </label>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="nameoc" class="form-label">Name on card</label>
+                      <input type="text" class="form-control" name="nameoc" id="nameoc" placeholder="Name on card">
+                    </div>
+
+                    <div class="mt-3">
+                      <label for="cardnumber" class="form-label">Card number</label>
+                      <input type="text" class="form-control" name="card-number" id="cardnumber" placeholder="Card number">
+                    </div>
+                    <div class="mt-3">
+                      <div class="row justify-content-between">
+                        <label for="cardnumber" class="form-label w-50">Expiration</label>
+                        <label for="cardnumber" class="form-label w-50">CVV</label>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="col-auto d-flex align-items-center w-50">
+                          <input type="text" class="form-control" name="expiration-month" id="cardnumber" placeholder="MM">
+                          <span class="px-3">/</span>
+                          <input type="text" class="form-control" name="expiration-year" id="cardnumber" placeholder="YYYY">
+                        </div>
+                        <div class="col-auto w-25">
+                          <input type="text" class="form-control" name="expiration-cvv" id="cardnumber" placeholder="CVV">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn mt-4">Purchase</button>
+                  </div>
+              </section>
+
+            </form>
+        </div>
+        <div class="col-12 col-xl-4 checkout-information">
+            <div class="border px-3 py-4 rounded">
+              <span class="fs-4">Summary</span>
+              <hr>
+              <table class="table table-borderless">
+                <tr>
+                  <th>Subtotal</th>
+                  <td class="text-end">$24</td>
+                </tr>
+                <tr>
+                  <th>Tax</th>
+                  <td class="text-end">$1</td>
+                </tr>
+                <tr>
+                  <th>Shipping</th>
+                  <td class="text-end">$0</td>
+                </tr>
+              </table>
+              <hr>
+              <table class="table table-borderless mb-0">
+                <tr>
+                  <th>
+                    <span class="fs-4">Total</span>
+                  </th>
+                  <td class="text-end fs-4 text-danger">$24</td>
+                </tr>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

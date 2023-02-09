@@ -1,0 +1,301 @@
+// Custom css here
+
+// My variable
+// Color
+$primary: #10B981;
+$primary-hover: #008b5d;
+$font: #131313;
+$border-color: #9CA3AF;
+$card-border: #E5E7EB;
+$price-color: #EF4444;
+$footer-bg: #065F46;
+
+// addtitional
+$border-radius: 10px;
+
+.primary-btn {
+  background-color: $primary;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+
+  &:hover {
+    background-color: $primary-hover;
+    color: #fff;
+  }
+}
+
+.secondary-btn {
+  border: 1px solid $primary !important;
+  color: $font;
+  border-radius: $border-radius;
+
+  &:hover {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: #fff  
+  }
+}
+
+.card {
+  border-radius: $border-radius;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: #131313;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.star-img {
+  max-height: 24px;
+  padding: 2px;
+  color: #FFD43B;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  min-height: 80px;
+}
+
+header {
+  .text-header {    
+      h1 {
+      font-size: 56px;
+      font-weight: 600;
+      color: $font;
+    }
+
+    p {
+      color: #6c757d;
+    }
+  }
+}
+
+footer {
+  background-color: $footer-bg;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.section-service {
+  margin-top: 96px;
+  font-weight: 400;
+}
+
+.section-make-room {
+  margin-top: 120px;
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .make-room-img {
+    height: 440px
+  }
+}
+
+.section-featured {
+  margin-top: 120px;
+}
+
+.section-subscribe {
+  margin-top: 100px;
+
+  .subscribe-content {
+    min-height: 400px;
+    // background-image: url("../assets/img/leaf_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    border-radius: $border-radius;
+  }
+}
+
+.section-cta-bottom {
+  margin: 120px 0;
+}
+
+.shop {
+  margin: 60px 0;
+
+  form {
+    width: 1000px;
+
+    #search {
+      width: 600px
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 48px;
+  
+  a {
+    img {
+      width: 48px;
+    }
+  }
+}
+
+
+.product {
+  min-height: 600px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.cart {
+  min-height: 600px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  .cart-table {
+    min-width: 640px;
+  }
+  
+  th {
+    font-weight: 500;
+  }
+}
+
+.checkout {
+  margin-bottom: 100px;
+
+  h2.title {
+    margin-top: 48px;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  form {
+    .customer-information {
+      margin-top: 56px;
+    }
+
+    .shipping-information {
+      margin-top: 100px;
+    }
+
+    .payment {
+      margin-top: 100px;
+    }
+  }
+
+  .checkout-information {
+    margin-top: 152px;
+  }
+
+  .number-container {
+    width: 50px;
+    height: 50px;
+    background-color: $primary;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    .text-header {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .section-make-room {
+    margin-top: 80px;
+  }
+
+  .section-featured {
+    margin-top: 80px;
+  }
+
+  .section-subscribe {
+    margin-top: 80px;
+
+    .subscribe-content {
+      // background-image: url("../assets/img/leaf_bg2.png");
+    }
+  }
+
+  .section-make-room {
+    .make-room-img {
+      height: 400px;
+    }
+  }
+
+  .section-cta-bottom {
+    margin: 80px 0;
+  }
+
+  .section-pagination {
+    margin-bottom: 48px 36;
+  }
+
+  .section-cart {
+      .cart-table {
+      min-width: 800px;
+    }
+  }
+}
+
+@media (max-width: 972px) {
+    header {
+      min-height: 600px;
+      background-image: url("../assets/img/hero_img2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center center; 
+
+      .text-header {
+        h1 {
+          font-size: 48px;
+          color: #fff;
+        }
+        p {
+          color: #fff
+        }
+        
+      }
+    }
+
+  .checkout {
+    .checkout-information {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  header {
+    .text-header {
+      h1 {
+        font-size: 48px;
+      }
+    }   
+  }
+}
+
+@media (min-width: 1320px) {
+    
+
+    .container {
+        max-width: 1200px;
+    }
+}
